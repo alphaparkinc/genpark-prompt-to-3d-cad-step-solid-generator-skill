@@ -1,0 +1,38 @@
+{
+  "name": "genpark-prompt-to-3d-cad-step-solid-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Prompt to 3D CAD STEP solid generator synthesizing manufacturing-ready B-Rep parametric geometry and topological entities.",
+  "author": "genpark",
+  "category": "text-to-cad",
+  "tags": [
+    "text-to-cad",
+    "step-brep",
+    "parametric-solid",
+    "mechanical-engineering",
+    "manufacturing-cad"
+  ],
+  "inputs": {
+    "mechanical_prompt": {
+      "type": "string"
+    },
+    "export_format": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "cad_generation_id": {
+      "type": "string"
+    },
+    "brep_faces_count": {
+      "type": "integer"
+    },
+    "manifold_watertight_verified": {
+      "type": "boolean"
+    },
+    "step_solid_file_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
